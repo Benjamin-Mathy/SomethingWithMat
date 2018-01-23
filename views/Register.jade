@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+    form(method='POST' action='/register')
+        div
+            label(for='login') Username:
+            input#login(type='text' , placeholder= 'Votre Username' name='Username')
+        div
+            label(for='password') Mot de passe :
+            input#password(type='password'  name='Mot de passe')
+    button(type='submit') Register
